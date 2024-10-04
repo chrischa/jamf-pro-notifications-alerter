@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Get notifications from Jamf Pro Server 1
-        run: bash scripts/jamf-pro-notifications-alerter.sh --url ${{ vars.JAMF_PRO_URL_1 }} --password ${{ secrets.API_PASS_1 }}
+        run: bash scripts/jamf-pro-notifications-alerter.sh --url ${{ vars.JAMF_PRO_URL_1 }} --username ${{ vars.API_USER_1 }} --password ${{ secrets.API_PASS_1 }}
   
   # Get notifications from a second Jamf Pro server (optional)
   # get-notifications-jamf-pro-2:
