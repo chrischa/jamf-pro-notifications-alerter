@@ -1,5 +1,11 @@
 name: Jamf Pro Notifications Alerter
 
+env:
+  JAMF_PRO_URL: ${{ secrets.JAMF_PRO_URL }}
+  API_USER: ${{ secrets.API_USER }}
+  API_PASS: ${{ secrets.API_PASS }}
+  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
 on:
   push:
     branches: [ "main" ]
